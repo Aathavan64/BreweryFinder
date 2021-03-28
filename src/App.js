@@ -8,11 +8,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <Search />
-        {/* <Counter /> */}
-        {/* < asoajdisaf /> */}
-      </header>
+      <Search />
     </div>
   );
 }

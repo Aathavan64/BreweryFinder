@@ -8,7 +8,6 @@ function CustomQuery({
     return (
         <StyledCustomQuery>
             <input type='search' value={value} onChange={handleCustomQueryChange} className="abc" />
-            <input type='search' value={value} onChange={handleCustomQueryChange} className="def" />
         </StyledCustomQuery>
     );
 }

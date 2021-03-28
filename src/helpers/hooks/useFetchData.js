@@ -3,6 +3,7 @@ import axios from 'axios';
 import { DATA_FETCH_STATUS } from '../constants';
 
 export const useFetchData = (url) => {
+    console.log('zz before fetch', url)
     const [status, setStatus] = useState(DATA_FETCH_STATUS.IDLE);
     const [data, setData] = useState([]);
 
@@ -13,7 +14,7 @@ export const useFetchData = (url) => {
             try {
                 setStatus(DATA_FETCH_STATUS.FETCHING);
                 const response = await axios.get(url);
-                console.log('DRD response:', response);
+                console.log('zz fetchUrl', url,response.data);
                 setData(response.data);
                 setStatus(DATA_FETCH_STATUS.SUCCESS);
             } catch (error) {
@@ -23,7 +24,7 @@ export const useFetchData = (url) => {
         };
 
         fetchData();
-    }, []);
+    }, [url]);
 
     return { status, data };
 };
