@@ -7,6 +7,7 @@ import { setBreweries, selectBreweries } from '../../slices';
 import { DATA_FETCH_STATUS } from '../../helpers/constants';
 import LOCATIONINFO from '../../LocationInfo';
 import { StyledSearch } from './StyledSearch';
+import Brewery  from './brewery';
 
 export function Search() {
     const [ locationInfo, setLocationInfo ] = useState(LOCATIONINFO);
@@ -81,58 +82,66 @@ export function Search() {
 
     if (status === DATA_FETCH_STATUS.SUCCESS && customQuery === '') {
         renderBreweryList = breweriesList.map(brewery => {
-            return (<p key={brewery.id}>{brewery.name}</p>)
+            return (
+            <Brewery key={brewery.id} brewery={brewery}></Brewery>
+            )
         })
     } else if (status === DATA_FETCH_STATUS.SUCCESS && customQuery !== '') {
         renderBreweryList = breweriesList
         .filter((brewery) => brewery.name.toLowerCase().includes(customQuery.toLowerCase()))
         .map(brewery => {
-            return (<p key={brewery.id}>{brewery.name}</p>)
+            return (
+                <Brewery key={brewery.id} brewery={brewery}></Brewery>
+            )
         })
     }
 
     return (
         <div>
             <StyledSearch>
-            <div className="landingSection">
-                <h1>Brewmato</h1>
-                <h2>Find the best breweries around you</h2>
-                <div className="listFilterContainer">
-            </div>
-                <select name="state" id="state"
-                    placeholder="Search State"
-                    aria-label="Filter By State"
-                    onChange={
-                        (e) => {
-                            setStateSearchUrl(`/search?query=${e.target.value}`)
-                            setCitySearchUrl(``)
-                            setStateParam(e.target.value)
-                            setCityParam('')
-                        }
-                    }
-                >
-                    <option value="" disabled selected>Select State</option>
-                    { stateList }
-                </select>
-                <select 
-                    name="city" 
-                    id="city"
-                    placeholder="Search City"
-                    aria-label="Filter By City"
-                    onChange={
-                        (e) => {
-                            setCitySearchUrl(`&query=${e.target.value}`)
-                            setCityParam(e.target.value)
-                        }
-                    }
-                >
-                    <option value="" disabled selected>Select State First</option>
-                    {cities}
-                </select>
-                <CustomQuery value={customQuery} handleCustomQueryChange={handleCustomQueryChange} />
-            </div>
-            <div className="breweryList">
-                {renderBreweryList}
+            <div className="mainContainer">
+                <div className="landingSection">
+                    <h1>Brewmato</h1>
+                    <h2>Find the best breweries around you</h2>
+                    <div className="listFilterContainer">
+                        <select 
+                            name="state" 
+                            id="state"
+                            placeholder="Search State"
+                            aria-label="Filter By State"
+                            onChange={
+                                (e) => {
+                                    setStateSearchUrl(`/search?query=${e.target.value}`)
+                                    setCitySearchUrl(``)
+                                    setStateParam(e.target.value)
+                                    setCityParam('')
+                                }
+                            }
+                        >
+                            <option value="" disabled selected>Select State</option>
+                            { stateList }
+                        </select>
+                        <select 
+                            name="city" 
+                            id="city"
+                            placeholder="Search City"
+                            aria-label="Filter By City"
+                            onChange={
+                                (e) => {
+                                    setCitySearchUrl(`&query=${e.target.value}`)
+                                    setCityParam(e.target.value)
+                                }
+                            }
+                        >
+                            <option value="" disabled selected>Select State First</option>
+                            {cities}
+                        </select>
+                        <CustomQuery value={customQuery} handleCustomQueryChange={handleCustomQueryChange} />
+                    </div>
+                </div>
+                <div className="breweryList">
+                    {renderBreweryList}
+                </div>
             </div>
             </StyledSearch>
         </div>

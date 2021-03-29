@@ -7,7 +7,7 @@ function CustomQuery({
 }) {
     return (
         <StyledCustomQuery>
-            <input type='search' value={value} onChange={handleCustomQueryChange} className="abc" />
+            <input aria-label="Search for Brewery by name" placeholder="Search Brewery Name" type='search' value={value} onChange={handleCustomQueryChange} className="abc" />
         </StyledCustomQuery>
     );
 }
