@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/Aathavan64/BreweryFinder/static/css/main.79a97f14.chunk.css",
-    "main.js": "/Aathavan64/BreweryFinder/static/js/main.0577ecd5.chunk.js",
-    "main.js.map": "/Aathavan64/BreweryFinder/static/js/main.0577ecd5.chunk.js.map",
-    "runtime-main.js": "/Aathavan64/BreweryFinder/static/js/runtime-main.03c2582e.js",
-    "runtime-main.js.map": "/Aathavan64/BreweryFinder/static/js/runtime-main.03c2582e.js.map",
-    "static/js/2.9050d168.chunk.js": "/Aathavan64/BreweryFinder/static/js/2.9050d168.chunk.js",
-    "static/js/2.9050d168.chunk.js.map": "/Aathavan64/BreweryFinder/static/js/2.9050d168.chunk.js.map",
-    "index.html": "/Aathavan64/BreweryFinder/index.html",
-    "static/css/main.79a97f14.chunk.css.map": "/Aathavan64/BreweryFinder/static/css/main.79a97f14.chunk.css.map",
-    "static/js/2.9050d168.chunk.js.LICENSE.txt": "/Aathavan64/BreweryFinder/static/js/2.9050d168.chunk.js.LICENSE.txt",
-    "static/media/breweryHero.004f8434.webp": "/Aathavan64/BreweryFinder/static/media/breweryHero.004f8434.webp",
-    "static/media/logo.db36153e.svg": "/Aathavan64/BreweryFinder/static/media/logo.db36153e.svg"
+    "main.css": "/BreweryFinder/static/css/main.79a97f14.chunk.css",
+    "main.js": "/BreweryFinder/static/js/main.73d618f6.chunk.js",
+    "main.js.map": "/BreweryFinder/static/js/main.73d618f6.chunk.js.map",
+    "runtime-main.js": "/BreweryFinder/static/js/runtime-main.f0b861eb.js",
+    "runtime-main.js.map": "/BreweryFinder/static/js/runtime-main.f0b861eb.js.map",
+    "static/js/2.4d63b020.chunk.js": "/BreweryFinder/static/js/2.4d63b020.chunk.js",
+    "static/js/2.4d63b020.chunk.js.map": "/BreweryFinder/static/js/2.4d63b020.chunk.js.map",
+    "index.html": "/BreweryFinder/index.html",
+    "static/css/main.79a97f14.chunk.css.map": "/BreweryFinder/static/css/main.79a97f14.chunk.css.map",
+    "static/js/2.4d63b020.chunk.js.LICENSE.txt": "/BreweryFinder/static/js/2.4d63b020.chunk.js.LICENSE.txt",
+    "static/media/breweryHero.004f8434.webp": "/BreweryFinder/static/media/breweryHero.004f8434.webp",
+    "static/media/logo.db36153e.svg": "/BreweryFinder/static/media/logo.db36153e.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.03c2582e.js",
-    "static/js/2.9050d168.chunk.js",
+    "static/js/runtime-main.f0b861eb.js",
+    "static/js/2.4d63b020.chunk.js",
     "static/css/main.79a97f14.chunk.css",
-    "static/js/main.0577ecd5.chunk.js"
+    "static/js/main.73d618f6.chunk.js"
   ]
 }
