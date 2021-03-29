@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Aathavan64/BreweryFinder/static/css/main.79a97f14.chunk.css",
+    "main.js": "/Aathavan64/BreweryFinder/static/js/main.0577ecd5.chunk.js",
+    "main.js.map": "/Aathavan64/BreweryFinder/static/js/main.0577ecd5.chunk.js.map",
+    "runtime-main.js": "/Aathavan64/BreweryFinder/static/js/runtime-main.03c2582e.js",
+    "runtime-main.js.map": "/Aathavan64/BreweryFinder/static/js/runtime-main.03c2582e.js.map",
+    "static/js/2.9050d168.chunk.js": "/Aathavan64/BreweryFinder/static/js/2.9050d168.chunk.js",
+    "static/js/2.9050d168.chunk.js.map": "/Aathavan64/BreweryFinder/static/js/2.9050d168.chunk.js.map",
+    "index.html": "/Aathavan64/BreweryFinder/index.html",
+    "static/css/main.79a97f14.chunk.css.map": "/Aathavan64/BreweryFinder/static/css/main.79a97f14.chunk.css.map",
+    "static/js/2.9050d168.chunk.js.LICENSE.txt": "/Aathavan64/BreweryFinder/static/js/2.9050d168.chunk.js.LICENSE.txt",
+    "static/media/breweryHero.004f8434.webp": "/Aathavan64/BreweryFinder/static/media/breweryHero.004f8434.webp",
+    "static/media/logo.db36153e.svg": "/Aathavan64/BreweryFinder/static/media/logo.db36153e.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.03c2582e.js",
+    "static/js/2.9050d168.chunk.js",
+    "static/css/main.79a97f14.chunk.css",
+    "static/js/main.0577ecd5.chunk.js"
+  ]
+}
